@@ -25,6 +25,15 @@
             console.log("mensakeee", payload);
         });
 
+        socket.on("emitir-mensaje", function( payload ){
+            console.log("Nuevo mensaje: ", payload);
+        });
+
+        socket.on("active-bands", function( payload ){
+            console.clear();
+            console.table(payload);
+        });
+
     </script>
 </body>
 </html>
